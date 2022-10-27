@@ -1,2 +1,3 @@
 # Lezioni-Mal
-gruppo studio Edger.
+gruppo studio Edgerunners.
+Amanda è stata qui.
