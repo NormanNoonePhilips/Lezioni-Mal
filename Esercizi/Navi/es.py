@@ -23,22 +23,22 @@ def checkPosAvailability(pln, tipo_nave, orientamento, x, y) -> bool:
                 case "a":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y][x+1] and pln[y][x+2] and pln[y][x+3]:
+                    elif pln[y][x+1] == '0' and pln[y][x+2] == '0' and pln[y][x+3] == '0':
                         return True
                 case "b":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y][x+1] and pln[y][x+2]:
+                    elif pln[y][x+1] == '0' and pln[y][x+2] == '0':
                         return True
                 case "c":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y][x+1]:
+                    elif pln[y][x+1] == '0':
                         return True
                 case "d":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y][x+1]:
+                    elif pln[y][x+1] == '0':
                         return True
                 case "e":
                     if pln[y][x] != '0':
@@ -52,22 +52,22 @@ def checkPosAvailability(pln, tipo_nave, orientamento, x, y) -> bool:
                 case "a":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y+1][x] and pln[y+2][x] and pln[y+3][x]:
+                    elif pln[y+1][x] == '0' and pln[y+2][x] == '0' and pln[y+3][x] == '0':
                         return True
                 case "b":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y+1][x] and pln[y+2][x]:
+                    elif pln[y+1][x] == '0' and pln[y+2][x] == '0':
                         return True
                 case "c":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y+1][x]:
+                    elif pln[y+1][x] == '0':
                         return True
                 case "d":
                     if pln[y][x] != '0':
                         return False
-                    elif pln[y+1][x]:
+                    elif pln[y+1][x] == '0':
                         return True
                 case "e":
                     if pln[y][x] != '0':
