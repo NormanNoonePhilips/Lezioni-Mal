@@ -1,0 +1,24 @@
+Inizializza una matrice 10x10 che indica la superfice di gioco.
+
+Hai cinque navi:
+	
+	a=Lunghezza 4
+	b=Lunghezza 3
+	c=Lunghezza 2
+	d=Lunghezza 2
+	e=Lunghezza 1 	Nave bonus.
+
+Le navi sono rettangoli, non possono compenentrarsi. Inizializza una matrice che mi mostri le navi disposte sulla plancia.
+
+Esempio:
+
+	[0][0][a][a][a][a][0][0][0][0]
+	[0][0][0][0][0][0][0][0][0][0]
+	[0][0][0][0][0][0][0][b][b][b]
+	[0][0][0][0][0][0][0][0][0][0]
+	[0][0][0][0][0][0][0][0][0][0]
+	[0][0][0][0][0][0][0][d][0][0]
+	[c][0][0][0][0][0][0][d][0][0]
+	[c][0][0][0][0][0][0][0][0][0]
+	[0][0][0][0][0][e][0][0][0][0]
+	[0][0][0][0][0][0][0][0][0][0]
