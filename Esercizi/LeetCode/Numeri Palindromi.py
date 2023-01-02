@@ -6,7 +6,7 @@ def lunghezza(numero):
             numero=numero//10
 
 def controllaPalindromo(numero):
-    if(numero>8388608 or numero<0):
+    if(numero>(pow(2,31)-1) or numero<0):
         return False
     for i in range(lunghezza(numero)-1,0,-2):
         if(numero//pow(10,i) != numero%10):
