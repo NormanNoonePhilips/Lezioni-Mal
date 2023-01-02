@@ -2,7 +2,7 @@ def Railroad(n, temp, Own):                 #rende il numero un array di singole
   if(n>=10):
     temp = n%10                             #ottengo ultima cifra
     Own.append(temp)
-    n = ((n-temp)/10)                       #tolgo l'ultima cifra da n
+    n = (n//10)                             #tolgo l'ultima cifra da n
     Railroad(n, temp, Own)
   else:
     temp = n
@@ -11,7 +11,7 @@ def Railroad(n, temp, Own):                 #rende il numero un array di singole
 
 
 def Gate(Own, wall, gate, cont):            #Own = n in array, wall è linghezza di Own, gate = vero/falso, cont = contatore
-  if(cont<wall and gate):                   #se abbiamo la prova ch enon è palindromo, inutile continuare a cercare
+  if(cont<wall and gate):                   #se abbiamo la prova che non è palindromo, inutile continuare a cercare
     if( Own[cont] != Own[(-cont-1)] ):      #se elemento array è diverso da quelllo specchaitto.... (esempio, posizione 0 e -1, oppure 1 e -2 e così via)
       gate = False
     gate = Gate(Own, wall, gate, cont+1)
