@@ -23,7 +23,7 @@ Tool = ['y','n','Y','N']                                                        
 while(esc != 'y'):
   
     n = int(input("inserire un numero fra -2'147'483'648 e +2'147'483'648: "))      #questo è il numero iniziale
-    int wall = len(Own)
+    wall = len(Own)
     bool gate = True                                                                #vedi def Gate
     if (n<0):
       gate = false                                                                  # se è negativo, non può esserer palindromo
