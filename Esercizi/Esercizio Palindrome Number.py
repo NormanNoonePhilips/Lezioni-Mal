@@ -28,7 +28,7 @@ while(esc != 'y'):
     if (n<0):
       gate = false                                                                  # se è negativo, non può esserer palindromo
     elif(n>=10):                                                                    # se è una cifra sola, è automaticamente palindromo
-      int Own[] = Railroad(n,0,Own)                                                 #vedi def Railroad
+      Own[] = Railroad(n,0,Own)                                                     #vedi def Railroad
       gate = Gate(Own, wall, gate, 0)
     print('caso palindromia: ', gate)
     
