@@ -24,7 +24,7 @@ while(esc != 'y'):
   
     n = int(input("inserire un numero fra -2'147'483'648 e +2'147'483'648: "))      #questo è il numero iniziale
     wall = len(Own)
-    bool gate = True                                                                #vedi def Gate
+    gate = True                                                                     #vedi def Gate
     if (n<0):
       gate = false                                                                  # se è negativo, non può esserer palindromo
     elif(n>=10):                                                                    # se è una cifra sola, è automaticamente palindromo
