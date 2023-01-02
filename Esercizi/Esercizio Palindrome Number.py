@@ -1,4 +1,4 @@
-def Railroad(n, temp, Own[]):   #rende il numero un array di singole cifre (n = numero, temp = numero temporaneo, Own = n messo a array)
+def Railroad(n, temp, Own):                 #rende il numero un array di singole cifre (n = numero, temp = numero temporaneo, Own = n messo a array)
   if(n>=10):
     temp = n%10                             #ottengo ultima cifra
     Own.append(temp)
@@ -18,21 +18,21 @@ def Gate(Own, wall, gate, cont):            #Own = n in array, wall è linghezza
   return(gate)
 
 
-esc = 'n'                                                                         #serve per fare più test senza avviare il debug ogni volta
-Tool = ['y','n','Y','N']                                                          #stessa utilità di esc
+esc = 'n'                                                                           #serve per fare più test senza avviare il debug ogni volta
+Tool = ['y','n','Y','N']                                                            #stessa utilità di esc
 while(esc != 'y'):
   
-    n = int(input("inserire un numero fra -2'147'483'648 e +2'147'483'648: "))    #questo è il numero iniziale
+    n = int(input("inserire un numero fra -2'147'483'648 e +2'147'483'648: "))      #questo è il numero iniziale
     int wall = len(Own)
-    bool gate = True                                                              #vedi def Gate
+    bool gate = True                                                                #vedi def Gate
     if (n<0):
-      gate = false                                                                # se è negativo, non può esserer palindromo
-    elif(n>=10):                                                                  # se è una cifra sola, è automaticamente palindromo
-      int Own[] = Railroad(n,0,Own[])                                             #vedi def Railroad
+      gate = false                                                                  # se è negativo, non può esserer palindromo
+    elif(n>=10):                                                                    # se è una cifra sola, è automaticamente palindromo
+      int Own[] = Railroad(n,0,Own)                                                 #vedi def Railroad
       gate = Gate(Own, wall, gate, 0)
     print('caso palindromia: ', gate)
     
-    esc = input('uscire dal programma? y/n ' )                                    #per fare più test senza avviare il debug ogni volta
+    esc = input('uscire dal programma? y/n ' )                                      #per fare più test senza avviare il debug ogni volta
     while(not(esc in Tool)):
         print('ERRORE: valore non valido.')
         esc = input('uscire dal programma? y/n ' ) 
