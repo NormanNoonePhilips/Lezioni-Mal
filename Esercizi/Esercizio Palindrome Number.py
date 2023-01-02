@@ -1,4 +1,4 @@
-def Railroad(int n, int temp, int Own[]):   #rende il numero un array di singole cifre (n = numero, temp = numero temporaneo, Own = n messo a array)
+def Railroad(n, temp, Own[]):   #rende il numero un array di singole cifre (n = numero, temp = numero temporaneo, Own = n messo a array)
   if(n>=10):
     temp = n%10                             #ottengo ultima cifra
     Own.append(temp)
