@@ -1,1 +1,7 @@
-
+-----------------------
+$ ssh
+(secure shell) protocollo per comunicare da macchina a macchina remoto
+chiave privata e chiave pubblica
+-----------------------
+$git log
+storico modifiche
